@@ -36,9 +36,10 @@ footer{padding:50px 0}.copyright{padding-top:20px}.copyright p{margin:0;color:#7
     background:url(../images/tumblr_1000_500.gif);
     background-size:cover;padding:0px;overflow:hidden
 }
-#s2{position:sticky;display: block;  margin-left: auto;
+#s2{position:sticky; display:block; 
+    margin-left: auto;
     margin-right: auto;
-    width: 100%; height:100vh;min-height:50px;max-height:250px;
+    width: 100%; height:100vh;min-height:50px;max-height:300px;
     background:url(../images/Rainbow_Raindrops_loop.gif);
     background-size:cover;overflow:hidden
 }
