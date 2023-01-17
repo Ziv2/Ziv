@@ -9,18 +9,20 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css"> 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
+
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
+    <div id="mobile-menu-open" align=center class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
     <!-- End #mobile-menu-toggle -->
     <header>
-        <div id="mobile-menu-close">
+
+        <div id="mobile-menu-close" align=center>
             <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <ul id="menu" class="shadow">
@@ -49,34 +51,38 @@
     </header>
     <!-- End header -->
 
-    <div id="lead">
-        <div id="lead-content">
+    <div id="lead" align=center>
+        <object data="images/Hcnj.gif" width="1250" height="500"></object>
+        
+        <div id="lead-content" align=center>
             <h1>Ziv Sobol</h1>
             <h2>Data scientist & ML researcher</h2>
-            <a href="https://github.com/Ziv2/ziv/blob/main/Files/cv_Ziv.pdf" download="cv_Ziv.pdf" class="btn-rounded-white">Download Resume</a>
+            <h3><b>Cooks analytical solutions to complex challenges</b></h3>
 
-            
+            <!-- <a href="https://github.com/Ziv2/ziv/blob/main/Files/cv_Ziv.pdf" download="cv_Ziv.pdf" class="btn-rounded-white">Download Resume</a> 
+                -->  
         </div>
         <!-- End #lead-content -->
+        <!-- Uncomment if you want a background 
+            <div id="lead-overlay"></div>
 
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
+            <div id="lead-down">
             <span>
                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </span>
+                    <Uncomment if you want a background>
+             -->
         </div>
         <!-- End #lead-down -->
     </div>
     <!-- End #lead -->
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
+    <div id="about" align=center>
+        <div class="container" align=center>
+            <div class="row" align=left>
+                <h2 class="heading">About me</h2>
+                <br>
+                <div class="col-md-8" align=left>
                     <h4>I am a curious person, like to learn new tools and delve deeper.</h4>
                     <li>Enjoys tackling challenges. Has a "Can do approach".</li>
                     <li>Enjoys brainstorming. Team player in my spirit.</li>
@@ -95,13 +101,12 @@
     </div>
     <!-- End #about -->
 
-    
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
+    <div id="projects" class="background-alt" align=center>
+        <h2 class="heading">Few projects</h2>
+        <div class="container" align=center>
+            <div class="row" align=center>
                 <!-- Start NLP_AUG -->
-                <div class="project shadow-large">
+                <div class="project shadow-large" align=center>
                     <div class="project-image">
                         <img src="images/NLP_AUG_0.4.jpg" />
                     </div>
@@ -118,6 +123,23 @@
                 <!-- End NLP_AUG -->
                 <div class="project shadow-large">
                     <div class="project-image">
+                        <img src="images/Crowdsourced-data-labeling.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info" align=left>
+                        <h3 align=center>Crowdsource data labeling</h3>
+                            <li>Define and run automatic crowd source labeling, and use it as a backbone for data augmentation.</li>
+                            <li>Whighted voting: Create a learnable wights.</li>
+                            <li>Reward optimization.</li>
+                            <li>Define voting filters.</li>
+                        <ul></ul>
+                        <a href="https://toloka.ai">View Project</a>
+                    </div>
+                </div>
+                <!-- End toloka -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
                         <img src="images/SHAP.jpg" />
                     </div>
                     <!-- End .project-image -->
@@ -127,6 +149,22 @@
                     <!-- End .project-info -->
                 </div>
                 <!-- End poisoning detector -->
+                
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/CHATBOT.jpeg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>ChatBot</h3>
+                        <p>
+                            Configurable bilingual chatbot based on the ConveRT enhanced question-response Transformer architecture. Slim encoder, transfer learning training followed by few-shot customization.
+                        </p>
+                    </div>
+                    <!-- End .CHATBOT-info -->
+                </div>
+                <!-- End .CHATBOT -->
+
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/OXITONE.JPG" />
@@ -144,24 +182,10 @@
                     <!-- End .OXITONE-info -->
                 </div>
                 <!-- End OXITONE -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/CHATBOT.jpeg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>ChatBot</h3>
-                        <p>
-                            Configurable bilingual chatbot based on the ConveRT enhanced question-response Transformer architecture. Slim encoder, transfer learning training followed by few-shot customization.
-                        </p>
-                    </div>
-                    <!-- End .CHATBOT-info -->
-                </div>
-                <!-- End .CHATBOT -->
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/Above panel_small.jpg" />
+                        
                     </div>
                     <!-- End .Above panel-image -->
                     <div class="project-info">
@@ -192,25 +216,10 @@
                 </div>
                 <!-- End ATJ -->
                             
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/Crowdsourced-data-labeling.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info" align=left>
-                        <h3 align=center>Crowdsource data labeling</h3>
-                            <li>Define and run automatic crowd source labeling, and use it as a backbone for data augmentation.</li>
-                            <li>Whighted voting: Create a learnable wights.</li>
-                            <li>Reward optimization.</li>
-                            <li>Define voting filters.</li>
-                        <ul align=center></ul>
-                        <a href="https://toloka.ai">View Project</a align=center>
-                    </div>
-                </div>
-                <!-- End toloka -->
             <a href="#top">Scroll to Top</a>
             <ul></ul>
             <a id="view-more-projects" href="#">View More Projects</a>
+
             <div id="more-projects" class="row">
                 
                 <div class="project shadow-large">
@@ -281,7 +290,7 @@
     </div>
     <!-- End #experience -->
 
-    <div id="education">
+    <div id="education" align=center>
         <h2 class="heading">Education</h2>
         <div class="education-block">
             <h3>Primrose</h3>
@@ -315,6 +324,18 @@
         <ul></ul>
     </div>
     <!-- End #education -->
+    
+<div id="lead" align=center>
+    
+    <object data="images/Rainbow_Raindrops_loop.gif" width="1250" height="450"></object>
+    
+    <div id="lead-content">
+        <h1>Skills</h1>
+        <h2>This list is for GPT3 training &#x1F609;</h2>
+    </div>
+    </div>
+</div>
+<!-- End #lead -->
 
     <div id="skills">
         <H1 class="heading">Languages</H1>
@@ -415,6 +436,8 @@
         <li>Team player</li>
         <li>Positive communication</li>
         </ul>
+        <ul></ul>
+
         <a href="#top">Scroll to Top</a>
         <ul></ul>
     </div>
