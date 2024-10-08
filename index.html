@@ -1,46 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Project Tiles</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="projects-container">
-        <div class="project-tile">
-            <img src="images/CHATBOT.jpeg" alt="Project 1" class="project-image">
-            <div class="project-title">Project 1</div>
-            <div class="project-details">
-                <h3>Project 1</h3>
-                <p>Details about Project 1. This is where the detailed description goes, including the project's purpose, technologies used, and so on.</p>
-            </div>
-        </div>
-        <div class="project-tile">
-            <img src="images/NLP_AUG_0.4.jpg" alt="Project 2" class="project-image">
-            <div class="project-title">Project 2</div>
-            <div class="project-details">
-                <h3>Project 2</h3>
-                <p>Details about Project 2. This is where the detailed description goes, including the project's purpose, technologies used, and so on.</p>
-            </div>
-        </div>
-        <!-- Add more project tiles as needed -->
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const projectTiles = document.querySelectorAll('.project-tile');
-            projectTiles.forEach(tile => {
-                tile.addEventListener('click', () => {
-                    const details = tile.querySelector('.project-details');
-                    details.classList.toggle('visible');
-                });
-            });
-        });
-    </script>
-</body>
-</html>
-
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -151,6 +108,52 @@
     <!-- End #about -->
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Project Tiles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="projects-container">
+        <div class="project-tile">
+            <img src="images/CHATBOT.jpeg" alt="Project 1" class="project-image">
+            <div class="project-title">Project 1</div>
+            <div class="project-details">
+                <h3>Project 1</h3>
+                <p>Details about Project 1. This is where the detailed description goes, including the project's purpose, technologies used, and so on.</p>
+            </div>
+        </div>
+        <div class="project-tile">
+            <img src="images/NLP_AUG_0.4.jpg" alt="Project 2" class="project-image">
+            <div class="project-title">Project 2</div>
+            <div class="project-details">
+                <h3>Project 2</h3>
+                <p>Details about Project 2. This is where the detailed description goes, including the project's purpose, technologies used, and so on.</p>
+            </div>
+        </div>
+        <!-- Add more project tiles as needed -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const projectTiles = document.querySelectorAll('.project-tile');
+            projectTiles.forEach(tile => {
+                tile.addEventListener('click', () => {
+                    const details = tile.querySelector('.project-details');
+                    details.classList.toggle('visible');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+	
     <div id="projects" class="background-alt" align=center>
         <h2 class="heading" align=left>Few projects </h2>
 
