@@ -9,7 +9,7 @@
 <body>
     <div class="projects-container">
         <div class="project-tile">
-            <img src="images/NLP_AUG_0.4.jpg" alt="Project 1" class="project-image">
+            <img src="images/CHATBOT.jpeg" alt="Project 1" class="project-image">
             <div class="project-title">Project 1</div>
             <div class="project-details">
                 <h3>Project 1</h3>
@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="project-tile">
-            <img src="images/CHATBOT.jpeg" alt="Project 2" class="project-image">
+            <img src="images/NLP_AUG_0.4.jpg" alt="Project 2" class="project-image">
             <div class="project-title">Project 2</div>
             <div class="project-details">
                 <h3>Project 2</h3>
@@ -33,11 +33,7 @@
             projectTiles.forEach(tile => {
                 tile.addEventListener('click', () => {
                     const details = tile.querySelector('.project-details');
-                    if (details.style.display === 'block') {
-                        details.style.display = 'none';
-                    } else {
-                        details.style.display = 'block';
-                    }
+                    details.classList.toggle('visible');
                 });
             });
         });
