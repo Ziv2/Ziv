@@ -93,23 +93,25 @@
                     image: 'images/NLP_AUG_0.4.jpg',
                     title: 'NLP augmentation',
                     details: '<h3>NLP augmentation</h3>'
-                '<p> Synthetic sentences that preserve meaning, aim to augment chatbot training.</p>'
-		'<a href="https://github.com/Ziv2/NLP-Augmentation">View Project</a>'
+               		 '<p> Synthetic sentences that preserve meaning, aim to augment chatbot training.</p>'
+			'<a href="https://github.com/Ziv2/NLP-Augmentation">View Project</a>'
                 }
+
 		{
-                    image: 'images/NLP_AUG_0.4.jpg',
-                    title: 'Project 2',
+                    image: 'images/SHAP.jpg',
+                    title: 'Database Poisoning',
                     details: <h3>Database poisoning & poisoning detector</h3>
                 }
 		{
-                    image: 'images/NLP_AUG_0.4.jpg',
-                    title: 'Project 2',
+                    image: 'images/Crowdsourced-data-labeling.jpg',
+                    title: 'Crowdsource data labeling',
                     details: <h3 align=center>Crowdsource data labeling</h3>
+		    	</ul>
                             <li>Define and run automatic crowd source labeling, and use it as a backbone for data augmentation.</li>
                             <li>Whighted voting: Create a learnable wights.</li>
                             <li>Reward optimization.</li>
                             <li>Define voting filters.</li>
-                        <ul></ul>
+                        </ul>
                         <a href="https://toloka.ai">View Project</a>
                 }
 		{
@@ -137,6 +139,31 @@
                 // Add more projects as needed
             ];
 
+
+            const projects = [
+                {
+                    image: 'images/CHATBOT.jpeg',
+                    title: 'Project 1',
+                    details: `<h3 align="center">Crowdsource data labeling</h3>
+                        <ul>
+                            <li>Define and run automatic crowd source labeling, and use it as a backbone for data augmentation.</li>
+                            <li>Whighted voting: Create learnable weights.</li>
+                            <li>Reward optimization.</li>
+                            <li>Define voting filters.</li>
+                        </ul>
+                        <a href="https://toloka.ai">View Project</a>`
+                },
+                {
+                    image: 'images/project2.jpg',
+                    title: 'Project 2',
+                    details: '<h3>Project 2</h3><p>Details about Project 2. This is where the detailed description goes, including the project's purpose, technologies used, and so on.</p>'
+                }
+                // Add more projects as needed
+            ];
+
+
+
+	    
             let currentIndex = 0;
 
             function updateProject(index) {
@@ -195,14 +222,7 @@
             </div>
                 <!-- End ATJ -->
 
-        <div class="project-tile">
-            <img src="images/SHAP.jpg" alt="Database Poisoning" class="project-image">
-            <div class="project-title">Database Poisoning</div>
-            <div class="project-details">
-		    <h3>Database poisoning & poisoning detector</h3>
-            </div>
-        </div>
-    	<!-- End poisoning detector -->
+
                 
         <div class="project-tile">
 		<img src="images/Above panel_small.jpg" alt="Above panel" class="project-image">
