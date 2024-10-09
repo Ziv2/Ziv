@@ -98,6 +98,7 @@
 
             let currentIndex = 0;
 
+
             function updateProject(index) {
                 const projectTile = document.getElementById('current-project');
                 projectTile.querySelector('.project-image').src = projects[index].image;
@@ -114,7 +115,7 @@
                 currentIndex = (currentIndex === projects.length - 1) ? 0 : currentIndex + 1;
                 updateProject(currentIndex);
             };
-        }); 
+        });
 
 
 
