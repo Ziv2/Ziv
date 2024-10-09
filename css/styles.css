@@ -169,3 +169,65 @@ footer{padding:50px 0}.copyright{padding-top:20px}.copyright p{margin:0;color:#7
 .right-arrow {
     margin-left: 20px;
 }
+
+
+/* Project Carousel Container */
+#project-carousel {
+  position: relative;
+  width: 80%;
+  max-width: 600px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+/* Project Tiles */
+.project-tile {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.project-tile.active {
+  display: block;
+}
+
+.project-tile img {
+  max-width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.project-tile.expanded img {
+  transform: scale(1.05);
+}
+
+.project-text {
+  display: none;
+  margin-top: 15px;
+}
+
+.project-tile.expanded .project-text {
+  display: block;
+}
+
+/* Navigation Arrows */
+.navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 2em;
+  user-select: none;
+  padding: 0 20px;
+  color: #333;
+}
+
+.arrow:hover {
+  color: #000;
+}
