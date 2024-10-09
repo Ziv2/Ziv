@@ -567,5 +567,47 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
 </body>
-
+<!-- End of html -->
 </html>
+		
+<script>
+// Wait for the DOM to fully load
+document.addEventListener('DOMContentLoaded', function() {
+  let currentIndex = 0;
+  const tiles = document.querySelectorAll('.project-tile');
+  const totalTiles = tiles.length;
+  const leftArrow = document.querySelector('.left-arrow');
+  const rightArrow = document.querySelector('.right-arrow');
+
+  // Function to show the tile at the current index
+  function showTile(index) {
+    tiles.forEach((tile, i) => {
+      tile.classList.toggle('active', i === index);
+      tile.classList.remove('expanded');
+    });
+  }
+
+  // Left arrow click event
+  leftArrow.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalTiles) % totalTiles;
+    showTile(currentIndex);
+  });
+
+  // Right arrow click event
+  rightArrow.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalTiles;
+    showTile(currentIndex);
+  });
+
+  // Image click event to expand and show text
+  tiles.forEach(tile => {
+    const img = tile.querySelector('img');
+    img.addEventListener('click', () => {
+      tile.classList.toggle('expanded');
+    });
+  });
+
+  // Initialize the carousel
+  showTile(currentIndex);
+});
+</script>
