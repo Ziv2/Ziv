@@ -60,24 +60,26 @@
 </head>
 <body>
     <div class="projects-container">
-        <div class="arrow left-arrow">
-            <img src="images/Right_Blue_Arrow_Transparent_PNG_Clip_Art_Image.png" alt="Previous Project" class="arrow-image" onclick="prevProject()">
-        </div>
+        <div class="images/Right_Blue_Arrow_Transparent_PNG_Clip_Art_Image.png" onclick="prevProject()">
+    <img src="images/left-arrow.png" alt="Previous Project" class="arrow-image">
+</div>
         <div class="project-tile-wrapper">
             <div class="project-tile" id="current-project">
-                <img src="images/CHATBOT.jpeg" alt="images/CHATBOT" class="project-image">
+                <img src="images/CHATBOT.jpeg" alt="Project 1" class="project-image">
                 <div class="project-title" style="margin-top: 5px;">Project 1</div>
                 <div class="project-details">
-                    <h3>CHATBOT</h3>
+                    <h3>Project 1</h3>
                     <p>Details about Project 1. This is where the detailed description goes, including the project's purpose, technologies used, and so on.</p>
                 </div>
             </div>
         </div>
-        <div class="arrow right-arrow">
-            <img src="images/images/arrow-clip-art-png-favpng-Utw3gtFkv8FJwRXrkuXw43S1E.jpg" alt="Next Project" class="arrow-image" onclick="nextProject()">
-        </div>
+        <div class="arrow right-arrow" onclick="nextProject()">
+    <img src="images/images/arrow-clip-art-png-favpng-Utw3gtFkv8FJwRXrkuXw43S1E.jpg" alt="Next Project" class="arrow-image">
+</div>
     </div>
 
+
+	
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const projects = [
