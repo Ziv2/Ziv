@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -51,64 +51,9 @@
 
 
 
-==========================================================
-<!-- Project Carousel Container -->
-<div id="project-carousel">
-  <!-- Project Tile 1 -->
-  <div class="project-tile active">
-    <div class="image-container">
-    <h3>CHATBOT</h3>
-	<h2>Project Title 1</h2>
-    <img src="images/CHATBOT.jpeg" alt="Project 1 Image">
-    <p class="project-text">Configurable bilingual chatbot based on the ConveRT enhanced question-response Transformer architecture. Slim encoder, transfer learning training followed by few-shot customization.</p>
-	<a href="https://github.com/primrose-deep-learning-schoo/myRobot">link to project</a>
-  </div>
-  </div>	
-  <!-- Project Tile 2 -->
-  <div class="project-tile">
-	<div class="image-container">
-    <h2>Project Title 2</h2>
-    <img src="images/NLP_AUG_0.4.jpg" alt="Project 2 Image">
-	<h3>NLP augmentation</h3>
-      <p class="project-text">Synthetic sentences that preserve meaning, aim to augment chatbot training.</p>
-	<a href="https://github.com/Ziv2/NLP-Augmentation">View Project</a>
-  </div>
-  </div>
-
-
-  <!-- Project Tile 3 -->
-  <div class="project-tile">
-    <h2>SHAP</h2>
-    <img src="images/SHAP.jpg" alt="Project 2 Image">
-	<h3>Database poisoning & poisoning detector</h3>
-
-    <!-- Project Tile 4 -->
-  <div class="project-tile">
-    <h2>SHAP</h2>
-    <img src="images/Crowdsourced-data-labeling.jpg" alt="Crowdsourced-data-labeling">
-	<h3>Crowdsource data labeling</h3>
-	<li>Define and run automatic crowd source labeling, and use it as a backbone for data augmentation.</li>'
-	<li>Whighted voting: Create a learnable wights.</li>'
-	<li>Reward optimization.</li>'
-	<li>Define voting filters.</li>'
-	<a href="https://toloka.ai">View Project</a>'
-	  
-	
-
-  <!-- Add more project tiles as needed -->
-
-  <!-- Navigation Arrows -->
-  <div class="navigation">
-    <span class="arrow left-arrow">&#9664;</span>
-    <span class="arrow right-arrow">&#9654;</span>
-  </div>
-</div>
-	
-
-	
-	
-=========================================	
+	==========================================================
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Project Tiles</title>
@@ -117,85 +62,44 @@
 <body>
     <div class="projects-container">
         <div class="arrow left-arrow" onclick="prevProject()">
-            <img src="images/arrow-clip-art-png-favpng-Utw3gtFkv8FJwRXrkuXw43S1E.png" alt="Previous Project" class="arrow-image" style="cursor: pointer;">
-        </div>
+    <img src="images/arrow-clip-art-png-favpng-Utw3gtFkv8FJwRXrkuXw43S1E.png" alt="Previous Project" class="arrow-image" style="cursor: pointer;">
+</div>
         <div class="project-tile-wrapper">
             <div class="project-tile" id="current-project">
                 <img src="images/CHATBOT.jpeg" alt="Project 1" class="project-image">
                 <div class="project-title" style="margin-top: 5px;">Project 1</div>
                 <div class="project-details">
-			<h3>CHATBOT</h3>
-                	<p>Configurable bilingual chatbot based on the ConveRT enhanced question-response Transformer architecture. Slim encoder, transfer learning training followed by few-shot customization.</p>
-		    	<a href="https://github.com/primrose-deep-learning-schoo/myRobot">link to project</a>
+                    <h3>Project 1</h3>
+                    <p>Details about Project 1. This is where the detailed description goes, including the project's purpose, technologies used, and so on.</p>
                 </div>
             </div>
         </div>
         <div class="arrow right-arrow" onclick="nextProject()">
-            <img src="images/Right_Blue_Arrow_Transparent_PNG_Clip_Art_Image.png" alt="Next Project" class="arrow-image" style="cursor: pointer;">
-        </div>
+    <img src="images/Right_Blue_Arrow_Transparent_PNG_Clip_Art_Image.png" alt="Next Project" class="arrow-image" style="cursor: pointer;">
+</div>
     </div>
+
+
+	
+	
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
-            let projects = [
-                {
-                    image: 'images/NLP_AUG_0.4.jpg',
-                    title: 'NLP augmentation',
-                    details: '<h3>NLP augmentation</h3>',
-               		'<p> Synthetic sentences that preserve meaning, aim to augment chatbot training.</p>':
-			        '<a href="https://github.com/Ziv2/NLP-Augmentation">View Project</a>'
-                },
+            const projects = [
                 {
                     image: 'images/CHATBOT.jpeg',
                     title: 'CHATBOT',
-                    details: '<h3>CHATBOT</h3>',
-                	'<p>Configurable bilingual chatbot based on the ConveRT enhanced question-response Transformer architecture. Slim encoder, transfer learning training followed by few-shot customization.</p>':
-		    	    '<a href="https://github.com/primrose-deep-learning-schoo/myRobot">link to project</a>'
+                    details: '<h3>Project 1</h3><p>Details about Project 1. This is where the detailed description goes, including the project\'s purpose, technologies used, and so on.</p>'
                 },
-		{
-                    image: 'images/SHAP.jpg',
-                    title: 'Database Poisoning',
-                    details: <h3>Database poisoning & poisoning detector</h3>
-                },
-		{
-                    image: 'images/Crowdsourced-data-labeling.jpg',
-                    title: 'Crowdsource data labeling',
-                    details: "Crowdsource data labeling",
-                            '<li>Define and run automatic crowd source labeling, and use it as a backbone for data augmentation.</li>':
-                            '<li>Whighted voting: Create a learnable wights.</li>',
-                            '<li>Reward optimization.</li>':
-                            '<li>Define voting filters.</li>',
-                            '<a href="https://toloka.ai">View Project</a>':
-
-
-		
+                {
+                    image: 'mages/NLP_AUG_0.4.jpg',
+                    title: 'NLP',
+                    details: '<h3>Project 2</h3><p>Details about Project 2. This is where the detailed description goes, including the project\'s purpose, technologies used, and so on.</p>'
+                }
                 // Add more projects as needed
             ];
 
-
-            <!-- const projects = [
-                {
-                    image: 'images/CHATBOT.jpeg',
-                    title: 'Project 1',
-                    details: `<h3 align="center">Crowdsource data labeling</h3>
-                        <ul>
-                            <li>Define and run automatic crowd source labeling, and use it as a backbone for data augmentation.</li>
-                            <li>Whighted voting: Create learnable weights.</li>
-                            <li>Reward optimization.</li>
-                            <li>Define voting filters.</li>
-                        </ul>
-                        <a href="https://toloka.ai">View Project</a>`
-                },
-                {
-                    image: 'images/project2.jpg',
-                    title: 'Project 2',
-                    details: '<h3>Project 2</h3><p>Details about Project 2. This is where the detailed description goes, including the project's purpose, technologies used, and so on.</p>'
-                }
-                // Add more projects as needed
-            ]; -->
-
-
-
-	    
             let currentIndex = 0;
+
 
             function updateProject(index) {
                 const projectTile = document.getElementById('current-project');
@@ -214,92 +118,17 @@
                 updateProject(currentIndex);
             };
         });
-</body>
+
+
+
+
+
+
+
 
 
 	=========================================================
-	
-
-	<div class="project-tile">
-            <img src="images/OXITONE.JPG" alt="OXITONE" class="project-image">
-            <div class="project-title">OXITONE: oximeter r&D</div>
-            <div class="project-details">
-		<h3>The first wrist oximeter</h3>
-		<p>
-		    At Oxitone, we invented and got FDA clearance for the first wrist oximeter.
-		</p>
-		<a href="https://www.accessdata.fda.gov/cdrh_docs/pdf16/K163382.pdf">FDA clearance</a>
-		<ul></ul>
-		<a href="https://www.oxitone.com/oxitone-1000m/">Oxitone product</a>		    
-	    </div>
-            </div>
-		    <!-- End OXITONE -->
-
-
-	<div class="project-tile">
-            <img src="images/Indigo.jpg" alt="ATJ" class="project-image">
-            <div class="project-title">Aoutomatic Test Jig</div>
-            <div class="project-details">
-		<h3>Aoutomatic Test Jig</h3>
-                        <p>
-                            Optimaized a semi automatic robot, that align optics and lasers array. This optical product needs to fit a tight constraints, 
-                            such as 99.5% accurecy out of 40 micro merter, in few nanoseconds. This accurecy need to be achived in a very noisy enviourment, all around the world, in very wide vriety of claimates condition, and for many years.
-                            This writing head is at the heart of Indigo's products:
-                        </p>
-                        <a href="https://www.hp.com/us-en/industrial-printers/indigo-digital-presses/lep-digital-printing-technology.html">View HP Indigo</a>   
-			    </div>		    
-	    </div>
-            </div>
-                <!-- End ATJ -->
-
-
-                
-        <div class="project-tile">
-		<img src="images/Above panel_small.jpg" alt="Above panel" class="project-image">
-            <div class="project-title">Above panel</div>
-            <div class="project-details">
-                        <h3>Invented a new display technology</h3>
-                        <p>This solution increased Fluorescent dyes lifetime, while improves efficiency and viewing angles.</p>
-                        <a href="https://patents.justia.com/patent/20180246371">View patent</a>
-                        <ul></ul>
-                        <a href="https://patents.justia.com/patent/20180039131">Another patent that I was initiated</a>
-                    </div>
-            </div>
-		    <!-- End Above panel -->
-			    
-
-	<div class="project-tile">
-            <img src="images/AdTech Stack_0.5.jpg" alt="Real Time Bidding" class="project-image">
-            <div class="project-title">Real Time Bidding</div>
-            <div class="project-details">
-                        <h3>RTB</h3>
-                        <p>
-                            Improve RTB (Real Time Bidding) yeild.
-                        </p>
-                    </div>
-            </div>
-		    <!-- End Real Time Bidding -->
-
-
-        </div>
-        <!-- TODO: 2023 projects tiles -->
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const projectTiles = document.querySelectorAll('.project-tile');
-            projectTiles.forEach(tile => {
-                tile.addEventListener('click', () => {
-                    const details = tile.querySelector('.project-details');
-                    details.classList.toggle('visible');
-                });
-            });
-        });
-    </script>
-
-
-==========================
-	    <div id="about" align=left>
+    <div id="about" align=left>
         <div class="container" align=left>
             <div class="row" align=left>
                 <h2 class="heading" align=left>About me</h2>
@@ -359,6 +188,222 @@
 
 <body>
 ===========================================
+
+	
+=======================================
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Project Tiles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="projects-container">
+        <div class="arrow left-arrow" onclick="prevProject()">&#8592;</div>
+        <div class="project-tile-wrapper">
+            <div class="project-tile" id="current-project">
+                <img src="images/CHATBOT.jpeg" alt="images/CHATBOT" class="project-image">
+                <div class="project-title" style="margin-top: 5px;">Project 1</div>
+                <div class="project-details">
+                    <h3>Project 1</h3>
+                    <p>Details about Project 1. This is where the detailed description goes, including the project's purpose, technologies used, and so on.</p>
+                </div>
+            </div>
+        </div>
+        <div class="arrow right-arrow" onclick="nextProject()">&#8594;</div>
+    </div>
+
+
+
+	
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const projects = [
+                {
+                    image: 'images/CHATBOT.jpeg',
+                    title: 'CHATBOT',
+                    details: '<h3>CHATBOT</h3><p>Details about Project 1. This is where the detailed description goes, including the project\'s purpose, technologies used, and so on.</p>'
+                },
+                {
+                    image: 'images/CHATBOT.jpeg',
+                    title: 'CHATBOT',
+                    details: '<h3>Project 2</h3><p>Details about Project 2. This is where the detailed description goes, including the project\'s purpose, technologies used, and so on.</p>'
+                }
+                // Add more projects as needed
+            ];
+
+            let currentIndex = 0;
+
+            function updateProject(index) {
+                const projectTile = document.getElementById('current-project');
+                projectTile.querySelector('.project-image').src = projects[index].image;
+                projectTile.querySelector('.project-title').textContent = projects[index].title;
+                projectTile.querySelector('.project-details').innerHTML = projects[index].details;
+            }
+
+            window.prevProject = function() {
+                currentIndex = (currentIndex === 0) ? projects.length - 1 : currentIndex - 1;
+                updateProject(currentIndex);
+            };
+
+            window.nextProject = function() {
+                currentIndex = (currentIndex === projects.length - 1) ? 0 : currentIndex + 1;
+                updateProject(currentIndex);
+            };
+        });
+    </script>
+</body>
+</html>
+
+
+
+==============================================
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+        <div class="project-tile">
+            <img src="images/CHATBOT.jpeg" alt="CHATBOT" class="project-image">
+            <div class="project-title">CHATBOT</div>
+            <div class="project-details">
+                <h3>CHATBOT</h3>
+                <p>Configurable bilingual chatbot based on the ConveRT enhanced question-response Transformer architecture. Slim encoder, transfer learning training followed by few-shot customization.</p>
+		    <a href="https://github.com/primrose-deep-learning-schoo/myRobot">link to project</a>
+
+            </div>
+        </div>
+    	<!-- End CHATBOT -->
+
+        <div class="project-tile">
+            <img src="images/NLP_AUG_0.4.jpg" alt="NLP_AUG" class="project-image">
+            <div class="project-title">NLP augmentation</div>
+            <div class="project-details">
+                <h3>NLP augmentation</h3>
+                <p> Synthetic sentences that preserve meaning, to augment chatbot training.</p>
+		<a href="https://github.com/Ziv2/NLP-Augmentation">View Project</a>
+
+            </div>
+        </div>
+		    <!-- End NLP_AUG -->
+
+	<div class="project-tile">
+            <img src="images/Crowdsourced-data-labeling.jpg" alt="Crowdsourced-data-labeling" class="project-image">
+            <div class="project-title">Crowdsourced-data-labeling</div>
+            <div class="project-details">
+                        <h3 align=center>Crowdsource data labeling</h3>
+                            <li>Define and run automatic crowd source labeling, and use it as a backbone for data augmentation.</li>
+                            <li>Whighted voting: Create a learnable wights.</li>
+                            <li>Reward optimization.</li>
+                            <li>Define voting filters.</li>
+                        <ul></ul>
+                        <a href="https://toloka.ai">View Project</a>
+                    </div>
+            </div>
+		    <!-- End toloka -->
+
+	<div class="project-tile">
+            <img src="images/OXITONE.JPG" alt="OXITONE" class="project-image">
+            <div class="project-title">OXITONE: oximeter r&D</div>
+            <div class="project-details">
+		<h3>The first wrist oximeter</h3>
+		<p>
+		    At Oxitone, we invented and got FDA clearance for the first wrist oximeter.
+		</p>
+		<a href="https://www.accessdata.fda.gov/cdrh_docs/pdf16/K163382.pdf">FDA clearance</a>
+		<ul></ul>
+		<a href="https://www.oxitone.com/oxitone-1000m/">Oxitone product</a>		    
+	    </div>
+            </div>
+		    <!-- End OXITONE -->
+
+
+	<div class="project-tile">
+            <img src="images/Indigo.jpg" alt="ATJ" class="project-image">
+            <div class="project-title">Aoutomatic Test Jig</div>
+            <div class="project-details">
+		<h3>Aoutomatic Test Jig</h3>
+                        <p>
+                            Optimaized a semi automatic robot, that align optics and lasers array. This optical product needs to fit a tight constraints, 
+                            such as 99.5% accurecy out of 40 micro merter, in few nanoseconds. This accurecy need to be achived in a very noisy enviourment, all around the world, in very wide vriety of claimates condition, and for many years.
+                            This writing head is at the heart of Indigo's products:
+                        </p>
+                        <a href="https://www.hp.com/us-en/industrial-printers/indigo-digital-presses/lep-digital-printing-technology.html">View HP Indigo</a>   
+			    </div>		    
+	    </div>
+            </div>
+                <!-- End ATJ -->
+
+        <div class="project-tile">
+            <img src="images/SHAP.jpg" alt="Database Poisoning" class="project-image">
+            <div class="project-title">Database Poisoning</div>
+            <div class="project-details">
+		    <h3>Database poisoning & poisoning detector</h3>
+            </div>
+        </div>
+    	<!-- End poisoning detector -->
+                
+        <div class="project-tile">
+		<img src="images/Above panel_small.jpg" alt="Above panel" class="project-image">
+            <div class="project-title">Above panel</div>
+            <div class="project-details">
+                        <h3>Invented a new display technology</h3>
+                        <p>This solution increased Fluorescent dyes lifetime, while improves efficiency and viewing angles.</p>
+                        <a href="https://patents.justia.com/patent/20180246371">View patent</a>
+                        <ul></ul>
+                        <a href="https://patents.justia.com/patent/20180039131">Another patent that I was initiated</a>
+                    </div>
+            </div>
+		    <!-- End Above panel -->
+			    
+
+	<div class="project-tile">
+            <img src="images/AdTech Stack_0.5.jpg" alt="Real Time Bidding" class="project-image">
+            <div class="project-title">Real Time Bidding</div>
+            <div class="project-details">
+                        <h3>RTB</h3>
+                        <p>
+                            Improve RTB (Real Time Bidding) yeild.
+                        </p>
+                    </div>
+            </div>
+		    <!-- End Real Time Bidding -->
+
+
+        </div>
+        <!-- TODO: 2023 projects tiles -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const projectTiles = document.querySelectorAll('.project-tile');
+            projectTiles.forEach(tile => {
+                tile.addEventListener('click', () => {
+                    const details = tile.querySelector('.project-details');
+                    details.classList.toggle('visible');
+                });
+            });
+        });
+    </script>
+
+
 
 
 
@@ -600,47 +645,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
 </body>
-<!-- End of html -->
+
 </html>
-		
-<script>
-// Wait for the DOM to fully load
-document.addEventListener('DOMContentLoaded', function() {
-  let currentIndex = 0;
-  const tiles = document.querySelectorAll('.project-tile');
-  const totalTiles = tiles.length;
-  const leftArrow = document.querySelector('.left-arrow');
-  const rightArrow = document.querySelector('.right-arrow');
-
-  // Function to show the tile at the current index
-  function showTile(index) {
-    tiles.forEach((tile, i) => {
-      tile.classList.toggle('active', i === index);
-      tile.classList.remove('expanded');
-    });
-  }
-
-  // Left arrow click event
-  leftArrow.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + totalTiles) % totalTiles;
-    showTile(currentIndex);
-  });
-
-  // Right arrow click event
-  rightArrow.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % totalTiles;
-    showTile(currentIndex);
-  });
-
-  // Image click event to expand and show text
-  tiles.forEach(tile => {
-    const img = tile.querySelector('img');
-    img.addEventListener('click', () => {
-      tile.classList.toggle('expanded');
-    });
-  });
-
-  // Initialize the carousel
-  showTile(currentIndex);
-});
-</script>
