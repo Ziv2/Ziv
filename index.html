@@ -173,6 +173,198 @@
     <!--</div>
     End #lead -->
 
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Project Tiles</title>
+    <style>
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .project-tile {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .project-tile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .project-title {
+            padding: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .project-details {
+            padding: 1rem;
+            background: rgba(255,255,255,0.95);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            overflow-y: auto;
+        }
+
+        .project-tile:hover .project-details {
+            opacity: 1;
+        }
+
+        .project-details h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .project-details p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .project-details a {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .project-details a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="projects-container">
+        <!-- CHATBOT -->
+        <div class="project-tile">
+            <img src="/api/placeholder/400/320" alt="CHATBOT" class="project-image">
+            <div class="project-title">CHATBOT</div>
+            <div class="project-details">
+                <h3>CHATBOT</h3>
+                <p>Configurable bilingual chatbot based on the ConveRT enhanced question-response Transformer architecture. Slim encoder, transfer learning training followed by few-shot customization.</p>
+                <a href="https://github.com/primrose-deep-learning-schoo/myRobot">View Project</a>
+            </div>
+        </div>
+
+        <!-- NLP Augmentation -->
+        <div class="project-tile">
+            <img src="/api/placeholder/400/320" alt="NLP Augmentation" class="project-image">
+            <div class="project-title">NLP augmentation</div>
+            <div class="project-details">
+                <h3>NLP augmentation</h3>
+                <p>Synthetic sentences that preserve meaning, to augment chatbot training.</p>
+                <a href="https://github.com/Ziv2/NLP-Augmentation">View Project</a>
+            </div>
+        </div>
+
+        <!-- Crowdsourced Data Labeling -->
+        <div class="project-tile">
+            <img src="/api/placeholder/400/320" alt="Crowdsourced Data Labeling" class="project-image">
+            <div class="project-title">Crowdsourced Data Labeling</div>
+            <div class="project-details">
+                <h3>Crowdsource data labeling</h3>
+                <p>
+                    - Define and run automatic crowd source labeling for data augmentation<br>
+                    - Weighted voting with learnable weights<br>
+                    - Reward optimization<br>
+                    - Define voting filters
+                </p>
+                <a href="https://toloka.ai/">View Project</a>
+            </div>
+        </div>
+
+        <!-- OXITONE -->
+        <div class="project-tile">
+            <img src="/api/placeholder/400/320" alt="OXITONE" class="project-image">
+            <div class="project-title">OXITONE: Oximeter R&D</div>
+            <div class="project-details">
+                <h3>The first wrist oximeter</h3>
+                <p>At Oxitone, we invented and got FDA clearance for the first wrist oximeter.</p>
+                <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf16/K163382.pdf">FDA clearance</a>
+                <a href="https://www.oxitone.com/oxitone-1000m/">Oxitone product</a>
+            </div>
+        </div>
+
+        <!-- Automatic Test Jig -->
+        <div class="project-tile">
+            <img src="/api/placeholder/400/320" alt="ATJ" class="project-image">
+            <div class="project-title">Automatic Test Jig</div>
+            <div class="project-details">
+                <h3>Automatic Test Jig</h3>
+                <p>Optimized a semi-automatic robot that aligns optics and laser arrays. This optical product needs to fit tight constraints, such as 99.5% accuracy out of 40 micrometers, in few nanoseconds. This accuracy needs to be achieved in a very noisy environment, all around the world, in very wide variety of climate conditions, and for many years.</p>
+                <a href="https://www.hp.com/us-en/industrial-printers/indigo-digital-presses/lep-digital-printing-technology.html">View HP Indigo</a>
+            </div>
+        </div>
+
+        <!-- Database Poisoning -->
+        <div class="project-tile">
+            <img src="/api/placeholder/400/320" alt="Database Poisoning" class="project-image">
+            <div class="project-title">Database Poisoning</div>
+            <div class="project-details">
+                <h3>Database poisoning & poisoning detector</h3>
+                <p>Advanced techniques for detecting and preventing database poisoning attacks.</p>
+            </div>
+        </div>
+
+        <!-- Above Panel -->
+        <div class="project-tile">
+            <img src="/api/placeholder/400/320" alt="Above Panel" class="project-image">
+            <div class="project-title">Above panel</div>
+            <div class="project-details">
+                <h3>Invented a new display technology</h3>
+                <p>This solution increased Fluorescent dyes lifetime, while improving efficiency and viewing angles.</p>
+                <a href="https://patents.justia.com/patent/20180246371">View patent</a>
+                <a href="https://patents.justia.com/patent/20180039131">View additional patent</a>
+            </div>
+        </div>
+
+        <!-- Real Time Bidding -->
+        <div class="project-tile">
+            <img src="/api/placeholder/400/320" alt="Real Time Bidding" class="project-image">
+            <div class="project-title">Real Time Bidding</div>
+            <div class="project-details">
+                <h3>RTB</h3>
+                <p>Improve RTB (Real Time Bidding) yield through advanced optimization techniques.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+	
+
+
+<html>	
 <body>
 
 
@@ -361,7 +553,7 @@
         });
     </script>
                             
-        <a href="https://ziv2.github.io/ziv/#top">Scroll to Top</a>
+<a href="https://ziv2.github.io/ziv/#top">Scroll to Top</a>
                             <!-- End #projects -->
 
     <div id="experience" class="background-alt">
