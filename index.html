@@ -316,6 +316,136 @@
                 });
             });
         });
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="about" align="left">
+        <div class="container">
+            <h2 class="heading">About Me</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <h4>I am a curious person, eager to learn new tools and delve deeper.</h4>
+                    <ul>
+                        <li>Enjoy tackling challenges with a "Can-do" approach.</li>
+                        <li>Love brainstorming and being a team player.</li>
+                        <li>Bring logical and critical thinking to tasks.</li>
+                        <li>Create synergy from a wide range of domains.</li>
+                    </ul>
+                    <h4>Innovative researcher with 4 years of experience in the ML/DL ecosystem.</h4>
+                    <ul>
+                        <li>Enjoy teaching machines to work efficiently.</li>
+                        <li>Have a broad variety of tools and experiences.</li>
+                        <li>Possess strong data and algorithmic intuition.</li>
+                        <li>Demonstrated practical math and statistics skills.</li>
+                        <li>Background in multidisciplinary R&D across all phases of a product's life cycle.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li><a href="https://github.com/Ziv2" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/ziv-sobol/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="background-alt" align="center">
+        <div id="lead">
+            <div id="lead-content">
+                <h1>Ziv Sobol</h1>
+                <h2>Data Scientist & ML Researcher</h2>
+                <h3><b>Embraces challenges and loves people</b></h3>
+            </div>
+        </div>
+
+        <div class="projects-container">
+            <div class="arrow left-arrow" onclick="prevProject()">&#8592;</div>
+            <div class="project-tile-wrapper">
+                <div class="project-tile" id="current-project">
+                    <img src="images/CHATBOT.jpeg" alt="CHATBOT" class="project-image">
+                    <div class="project-title">Project 1</div>
+                    <div class="project-details">
+                        <h3>Project 1</h3>
+                        <p>Details about Project 1, including purpose, technologies used, and outcomes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow right-arrow" onclick="nextProject()">&#8594;</div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const projects = [
+                {
+                    image: 'images/CHATBOT.jpeg',
+                    title: 'CHATBOT',
+                    details: '<h3>CHATBOT</h3><p>Details about CHATBOT including its purpose and technologies used.</p>'
+                },
+                {
+                    image: 'images/NLP_AUG.jpg',
+                    title: 'NLP Augmentation',
+                    details: '<h3>NLP Augmentation</h3><p>Details about NLP Augmentation project.</p>'
+                }
+            ];
+
+            let currentIndex = 0;
+
+            function updateProject(index) {
+                const projectTile = document.getElementById('current-project');
+                projectTile.querySelector('.project-image').src = projects[index].image;
+                projectTile.querySelector('.project-title').textContent = projects[index].title;
+                projectTile.querySelector('.project-details').innerHTML = projects[index].details;
+            }
+
+            window.prevProject = function() {
+                currentIndex = (currentIndex === 0) ? projects.length - 1 : currentIndex - 1;
+                updateProject(currentIndex);
+            };
+
+            window.nextProject = function() {
+                currentIndex = (currentIndex === projects.length - 1) ? 0 : currentIndex + 1;
+                updateProject(currentIndex);
+            };
+        });
+    </script>
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <!-- Timeline content goes here -->
+        </div>
+    </div>
+
+    <div id="education" align="center">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>Primrose</h3>
+            <span class="education-date">Feb 2021 - Jun 2021</span>
+            <h4>Data Science, Machine Learning, and Deep Learning</h4>
+            <p>Covered NLP, Vision, Tabular, Voice, unsupervised learning, dimensionality reduction, and visualizations.</p>
+        </div>
+        <div class="education-block">
+            <h3>Hebrew University</h3>
+            <span class="education-date">2007 - 2011</span>
+            <h4>Master of Science in Applied Physics</h4>
+            <p>Developed a generalization model for electrode polarization and validated it through measurements.</p>
+        </div>
+        <div class="education-block">
+            <h3>Ben-Gurion University</h3>
+            <span class="education-date">2003 - 2006</span>
+            <h4>Bachelor of Science in Physics, with Excellence</h4>
+        </div>
+    </div>
+
     </script>
 </body>
 </html>
