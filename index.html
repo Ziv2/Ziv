@@ -48,19 +48,15 @@
     <!-- End header -->
 
 
-
-	==========================================================
-
-
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Project Tiles</title>
     <link rel="stylesheet" href="./css/styles.css">
 
 
-    <div class="projects-container">
-        <div class="arrow left-arrow" onclick="prevProject()">
-    <img src="./images/arrow-clip-art-png-favpng-Utw3gtFkv8FJwRXrkuXw43S1E.png" alt="Previous Project" class="arrow-image" style="cursor: pointer;">
+    <!-- <div class="projects-container"> -->
+        <!-- <div class="arrow left-arrow" onclick="prevProject()">
+    <img src="./images/arrow-clip-art-png-favpng-Utw3gtFkv8FJwRXrkuXw43S1E.png" alt="Previous Project" class="arrow-image" style="cursor: pointer;"> -->
 </div>
         <div class="project-tile-wrapper">
             <div class="project-tile" id="current-project">
@@ -72,13 +68,11 @@
                 </div>
             </div>
         </div>
-        <div class="arrow right-arrow" onclick="nextProject()">
-    <img src="./images/Right_Blue_Arrow_Transparent_PNG_Clip_Art_Image.png" alt="Next Project" class="arrow-image" style="cursor: pointer;">
+        <!-- <div class="arrow right-arrow" onclick="nextProject()">
+    <img src="./images/Right_Blue_Arrow_Transparent_PNG_Clip_Art_Image.png" alt="Next Project" class="arrow-image" style="cursor: pointer;"> -->
 </div>
-    </div>
 
 
-	
 	
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -106,44 +100,40 @@
                 projectTile.querySelector('.project-details').innerHTML = projects[index].details;
             }
 
-            window.prevProject = function() {
-                currentIndex = (currentIndex === 0) ? projects.length - 1 : currentIndex - 1;
-                updateProject(currentIndex);
-            };
+            // window.prevProject = function() {
+            //     currentIndex = (currentIndex === 0) ? projects.length - 1 : currentIndex - 1;
+            //     updateProject(currentIndex);
+            // };
 
-            window.nextProject = function() {
-                currentIndex = (currentIndex === projects.length - 1) ? 0 : currentIndex + 1;
-                updateProject(currentIndex);
-            };
+            // window.nextProject = function() {
+            //     currentIndex = (currentIndex === projects.length - 1) ? 0 : currentIndex + 1;
+            //     updateProject(currentIndex);
+            // };
         });
+    </script>
 
-
-
-
-
-
-
-
-
-	=========================================================
-    <div id="about" align=left>
-        <div class="container" align=left>
-            <div class="row" align=left>
-                <h2 class="heading" align=left>About me</h2>
+<div>
+    <div id="about" align=center>
+        <div class="container" align=center>
+            <div class="row" align=center>
+                <h1 class="heading" align=center>Ziv Sobol</h1>
                 <br>
-                <div class="col-md-8" align=left>
-                    <h4>I am a curious person, like to learn new tools and delve deeper.</h4>
-                    <li>Enjoys tackling challenges. Has a "Can do approach".</li>
-                    <li>Enjoys brainstorming. Team player in my spirit.</li>
-                    <li>Has the ability to bring logical and critical thinking.</li>
-                    <li>Create a synergy from a very wide spread of domains.</li>
-                    <h4>Innovative researcher with 4 years of experience in ML/DL ecosystem.</h4>
-                    <li>Enjoys teaching machines to do the work.</li>
-                    <li>Have a wide variety of tools and experience.</li>
-                    <li>Great data and algorithmic intuition.</li>
-                    <li>Demonstrated practical math and statistics.</li>
-                    <li>Background in multidiscipline R&D, through all phases of a product's life cycle.</li>
+                <div class="col-md-8" align=center>
+                <h4>Data Scientist & Machine Learning Researcher with 5 years of expertise in developing ML/DL solutions.</h4> 
+                Demonstrated experience in end-to-end product development, from research and prototyping to production deployment. Strong foundation in applied mathematics, statistics, and algorithmic optimization.
+                Core competencies include:
                 </div>
+                <div class="col-md-8" align=left>
+                <li>Advanced machine learning model development and optimization</li>
+                <li>Cross-functional R&D project leadership</li>
+                <li>Statistical analysis and experimental design</li>
+                <li>Interdisciplinary research synthesis</li>
+                </div>
+                <div class="col-md-8" align=center>
+                Proven track record of translating complex business problems into actionable ML solutions. Combines analytical rigor with innovative problem-solving approaches to deliver scalable data-driven systems. Experienced in collaborative research environments and knowledge transfer across technical teams.
+                Technical expertise spans the complete ML/DL ecosystem, with particular strength in experimental design, model architecture, and production implementation. Committed to staying current with emerging technologies and best practices in the rapidly evolving field of machine learning.
+                </div>
+                </br>
             </div>
         </div>
         <div class="col-sm-5 social" align=left>
@@ -159,17 +149,16 @@
     </div>
     <!-- End #about -->
 
-<div id="projects" class="background-alt" align=center>
+<!--<div id="projects" class="background-alt" align=center>
     <div id="lead" align=center>        
         <div id="lead-content" align=center>
             <h1>Ziv Sobol</h1>
             <h2>Data scientist & ML researcher</h2>
             <h3><b>Embraces challenges and loves people </b></h3>
 
-            <!-- <a href="https://github.com/Ziv2/ziv/blob/main/Files/cv_Ziv.pdf" download="cv_Ziv.pdf" class="btn-rounded-white">Download Resume</a> 
-                -->  
+             <a href="https://github.com/Ziv2/ziv/blob/main/Files/cv_Ziv.pdf" download="cv_Ziv.pdf" class="btn-rounded-white">Download Resume</a>  
         </div>
-        <!-- End #lead-content -->
+         End #lead-content -->
         <!-- Uncomment if you want a background 
             <div id="lead-overlay"></div>
 
@@ -179,16 +168,13 @@
             </span>
                     <Uncomment if you want a background>
              -->
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
+        <!--</div>
+         End #lead-down -->
+    <!--</div>
+    End #lead -->
 
 <body>
-===========================================
 
-	
-=======================================
 
 <head>
     <meta charset="UTF-8">
@@ -198,7 +184,7 @@
 </head>
 <body>
     <div class="projects-container">
-        <div class="arrow left-arrow" onclick="prevProject()">&#8592;</div>
+        <!-- <div class="arrow left-arrow" onclick="prevProject()">&#8592;</div> -->
         <div class="project-tile-wrapper">
             <div class="project-tile" id="current-project">
                 <img src="images/CHATBOT.jpeg" alt="images/CHATBOT" class="project-image">
@@ -209,10 +195,7 @@
                 </div>
             </div>
         </div>
-        <div class="arrow right-arrow" onclick="nextProject()">&#8594;</div>
     </div>
-
-
 
 	
     <script>
@@ -240,40 +223,17 @@
                 projectTile.querySelector('.project-details').innerHTML = projects[index].details;
             }
 
-            window.prevProject = function() {
-                currentIndex = (currentIndex === 0) ? projects.length - 1 : currentIndex - 1;
-                updateProject(currentIndex);
-            };
+            // window.prevProject = function() {
+            //     currentIndex = (currentIndex === 0) ? projects.length - 1 : currentIndex - 1;
+            //     updateProject(currentIndex);
+            // };
 
-            window.nextProject = function() {
-                currentIndex = (currentIndex === projects.length - 1) ? 0 : currentIndex + 1;
-                updateProject(currentIndex);
-            };
+            // window.nextProject = function() {
+            //     currentIndex = (currentIndex === projects.length - 1) ? 0 : currentIndex + 1;
+            //     updateProject(currentIndex);
+            // };
         });
     </script>
-
-
-
-
-
-==============================================
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -400,17 +360,9 @@
             });
         });
     </script>
-
-
-
-
-
-
-
-
                             
-            <a href="https://ziv2.github.io/ziv/#top">Scroll to Top</a>
-    <!-- End #projects -->
+        <a href="https://ziv2.github.io/ziv/#top">Scroll to Top</a>
+                            <!-- End #projects -->
 
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
@@ -497,7 +449,6 @@
     <object data="./My Portfolio_files/Rainbow_Raindrops_loop.gif" width="1700" height="300"></object>  
     <div id="s2-content">
         <h1>Skills</h1>
-        <h2>Reference to "Memento" 😉</h2>
     </div>
 
 </div>
